@@ -233,14 +233,119 @@ html,body{
 #steps #step-steps #step:first-child #num h1{
   padding-left: 18px;
 }
-@media(min-width:550px){
-    #steps #step-steps{
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+  
+#steps{
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+  background-color:white;
+  border-top-left-radius: 90% 20%;
+  border-top-right-radius: 90% 20%;
+}
+#steps #step-head{
+  height: 20vh;
+  width: 39vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: -17vh;
+}
+#steps #step-head h1{
+  font-size: 60px;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+#steps #step-head h1:nth-of-type(2){
+  color: #4A5BCF;
+}
+#steps #step-line{
+  height: 10vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -11vh;
+}
+#steps #step-line p{
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: gray;
+}
+#steps #step-steps{
   height: 47vh;
   width: 88vw;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding-top: 7vh;
 }
+#steps #step-steps #step{
+  height: 50vh;
+  width: 22vw;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  background-color:  rgb(233, 228, 228);
 }
+#steps #step-steps span{
+  font-size: 60px;
+  font-weight: 300;
+  color: #4A5BCF;
+}
+#steps #step-steps #step #num{
+  height: 7vh;
+  width: 3.5vw;
+  margin: 20px;
+  border-radius: 100%;
+  border: 1px solid black;
+  background-color: black;
+}
+#steps #step-steps #step:hover{
+  background-color:#4A5BCF;
+  border: #4A5BCF;
+  #num{
+    background-color: white;
+    border: white;
+  }
+  #num h1{
+    color: black;
+  }
+  color: white;
+  transition: 0.3s ease;
+}
+#steps #step-steps #step #num h1{
+  font-weight: 300;
+ padding-left: 16px;
+ padding-top: 5px;
+ color: white;
+}
+#steps #step-steps #step:first-child #num h1{
+  padding-left: 18px;
+}
+} 
+
+
+
+
+
+
 #part2{
   height: 60vh;
   width: 100%;
@@ -575,9 +680,6 @@ html,body{
   .faq-answer{
     font-size: 12px;
   }
-  .faq-item.active .faq-answer {
-    max-height: 70px;
-  }
   #faqs #more{
     height: 10vh;
     margin-top: 90px;
@@ -587,26 +689,6 @@ html,body{
     width: 19vw;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

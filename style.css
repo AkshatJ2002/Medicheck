@@ -233,7 +233,14 @@ html,body{
 #steps #step-steps #step:first-child #num h1{
   padding-left: 18px;
 }
-
+@media(min-width:550px){
+    #steps #step-steps{
+  height: 47vh;
+  width: 88vw;
+  display: flex;
+  flex-direction: column;
+}
+}
 #part2{
   height: 60vh;
   width: 100%;
